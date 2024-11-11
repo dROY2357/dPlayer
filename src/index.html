@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dPlayer</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Theme Mode toggle button and Heading of player -->
+      <div class="centerAlign">
+        <h1 id="player-heading">dPlayer</h1>
+        <div id="toggleAlign">
+          <input type="checkbox" id="switch" class="checkbox" />
+          <label for="switch" class="toggle"> </label>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="AllsongsCard card vflex">
+          <div>
+            <!------ extra divfor alignment --->
+            <div id="genreSelectorContainer" class="centerAlign">
+              <label for="genreSelector"><pre>Genre: </pre></label>
+              <select id="genreSelector">
+                <option value="All" selected>All genres</option>
+                <option value="Pop">Pop</option>
+                <option value="Bollywood">Bollywood</option>
+                <option value="Indi">Indi</option>
+              </select>
+            </div>
+            <div class="centerAlign"><h3 id="genreTitle">All</h3></div>
+            <div id="songDisplay" class="vflex">Songs List</div>
+          </div>
+
+          <div id="songSearch" class="vflex">
+            <div id="songSearchDisplay" class="vflex"></div>
+            <input
+              type="text"
+              id="songSearchInput"
+              placeholder="Search Songs"
+            />
+            <button id="songSearchbtn">Search</button>
+          </div>
+        </div>
+        <div class="songPlayCard card vflex">
+          <div id="songDisplayCard">
+            <center>
+              <img
+                id="albumArt"
+                src="../assets/albumArt/default.webp"
+                alt="Album Art Loading"
+              />
+            </center>
+            <div class="vflex">
+              <div id="songName">Song Name</div>
+              <div id="artistName">Artist Name</div>
+            </div>
+          </div>
+          <div id="audioContainer">
+            <audio id="audioPlayer" controls>
+              <source id="audioSource" src="" type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="vflex">
+            <div class="centerAlign">
+              <button id="playPreviousSongbtn"><</button>
+              <button id="playNextSongbtn">></button>
+            </div>
+            <button id="addToPlaylisbtn">Add to Playlist</button>
+            <button id="removebtn">Remove</button>
+          </div>
+        </div>
+        <div class="playlistCard card vflex">
+          <div>
+            <div class="vflex">
+              <input type="text" id="createPlaylistInput" />
+              <button id="createPlaylistbtn">Create Playlist</button>
+            </div>
+            <div class="vflex">
+              <h2>Current Playlist</h2>
+              <div id="playlistNameDisplay"></div>
+              <div id="currentPlaylistDisplay" class="vflex w-100"></div>
+            </div>
+            <div class="vflex">
+              <h2>All Playlist</h2>
+            </div>
+            <div id="playlistsContainer" class="vflex"></div>
+          </div>
+          <div id="playlistSearch" class="vflex">
+            <div id="playlistSearchDisplay" class="vflex w-100"></div>
+            <input type="text" id="playlistSearchInput" />
+            <button id="playlistSearchbtn">Search</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

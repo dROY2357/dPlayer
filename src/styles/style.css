@@ -1,0 +1,177 @@
+[data-theme="light"] {
+  --color-bg: white;
+  --color-fg: #000000;
+  --color-card: #b1b1b1;
+  --color-heading: black;
+  --color-accent: white;
+}
+
+[data-theme="dark"] {
+  --color-bg: #2c2b2b;
+  --color-fg: #ffffff;
+  --color-card: #000;
+  --color-heading: aquamarine;
+  --color-accent: aquamarine;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#player-heading {
+  color: var(--color-heading);
+  transform: translateX(18%);
+}
+
+input {
+  margin-top: 0.8em;
+}
+
+.centerAlign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.3em;
+}
+
+.container {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5dvw;
+  min-height: 80vh; */
+  display: flex;
+  justify-content: space-around;
+  height: 80vh;
+}
+
+.card {
+  padding-top: 0.8em;
+  border-radius: 10px;
+  background-color: var(--color-card);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  width: 30%;
+  height: auto;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+#albumArt {
+  margin: 1em;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.vflex {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-decoration: none;
+
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px;
+  border-radius: 10px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  width: 70%;
+  margin: 0.6em;
+}
+
+#playPreviousSongbtn {
+  height: 100%;
+  width: 80px;
+  background-color: var(--color-accent);
+}
+
+#playNextSongbtn {
+  height: 100%;
+  width: 80px;
+  background-color: var(--color-accent);
+}
+
+button:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  button {
+    padding: 0.25em 0.75em;
+  }
+}
+
+#genreTitle {
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+/*Toggle button*/
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  background-color: black;
+  border-radius: 15px;
+  border: 2px solid gray;
+}
+
+/*toggle:after sliding changes*/
+.toggle:after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: gray;
+  top: 1px;
+  left: 1px;
+  transition: all 0.5s;
+}
+
+/*Checkbox checked effect*/
+.checkbox:checked + .toggle::after {
+  left: 24.5px;
+}
+
+/*Toggle label's bgcolor when checked*/
+.checkbox:checked + .toggle {
+  background-color: white;
+}
+
+/*Hide checkbox*/
+.checkbox {
+  display: none;
+}
+
+#toggleAlign {
+  position: relative;
+  left: 37%;
+}
+
+#songName {
+  font-size: 24px;
+}
+.w-100 {
+  width: 100%;
+}

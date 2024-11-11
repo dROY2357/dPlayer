@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "The Real Slim Shady",
+    "artist": "Eminem",
+    "img": "../assets/albumArt/EmRealSlim.webp",
+    "genre": "Pop",
+    "source": "../assets/Songs/The-Real-Slim-Shady.mp3"
+  },
+  {
+    "id": 2,
+    "name": "Superman",
+    "artist": "Eminem",
+    "img": "../assets/albumArt/EmSuperman.jpeg",
+    "genre": "Pop",
+    "source": "../assets/Songs/EmSuperman.mp3"
+  },
+  {
+    "id": 3,
+    "name": "Kamikaze",
+    "artist": "Eminem",
+    "img": "../assets/albumArt/EmKamikaze.jpg",
+    "genre": "Pop",
+    "source": "../assets/Songs/emvenomkamikaze.mp3"
+  },
+  {
+    "id": 4,
+    "name": "Arjan Vailey",
+    "artist": "Bhupinder Babbal",
+    "img": "../assets/albumArt/lr1.jpeg",
+    "genre": "Bollywood",
+    "source": "../assets/Songs/arjanvalley.mp3"
+  },
+  {
+    "id": 5,
+    "name": "Jamal Kudu",
+    "artist": "Harshwardhan Rameshewar",
+    "img": "../assets/albumArt/lr3.jpeg",
+    "genre": "Bollywood",
+    "source": "../assets/Songs/JamalJamal.mp3"
+  },
+  {
+    "id": 6,
+    "name": "Dzanum",
+    "artist": "Tera Doya",
+    "img": "../assets/albumArt/moye.jpeg",
+    "genre": "Indi",
+    "source": "../assets/Songs/Moye.mp3"
+  }
+]
